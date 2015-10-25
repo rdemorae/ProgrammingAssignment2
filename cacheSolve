@@ -3,6 +3,7 @@ cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
   if (!is.null(inv)) {
     return(inv)
+## gets inverse from cache if it already calculated in makeCacheMatrix
   }
   mat <- x$get()
   inv <- solve(mat, ...)
