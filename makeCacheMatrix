@@ -1,3 +1,4 @@
+## creates the matrix x to heve its inverse calculated
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
